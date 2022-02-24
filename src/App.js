@@ -16,7 +16,7 @@ function App() {
 	useEffect(() => {
 		WebFont.load({
 			google: {
-				families: ["Open Sans", "Montserrat:400,700,900"],
+				families: ["Open Sans", "Montserrat:400,500,600,700,900"],
 			},
 		});
 	}, []);

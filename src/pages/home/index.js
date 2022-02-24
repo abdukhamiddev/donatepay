@@ -4,7 +4,7 @@ import { Styled } from "./HomeStyle";
 import HomeHeroImage from "../../assets/images/home-hero.png";
 import { ReactComponent as PlayButtonIcon } from "../../assets/icons/play.svg";
 import ButtonIcon from "../../components/ButtonIcon";
-import CmButton from "../../components/Button";
+import CmButton from "../../components/CmButton";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import CModal from "../../components/Modal";

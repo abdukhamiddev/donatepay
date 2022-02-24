@@ -1,6 +1,6 @@
 import React from "react";
 import { Styled } from "./NavbarStyle";
-import { Container } from "@mui/material";
+import { Container, Divider } from "@mui/material";
 import { Link, NavLink } from "react-router-dom";
 import { ReactComponent as Logo } from "../../../assets/svg/logo.svg";
 
@@ -24,6 +24,7 @@ const Navbar = () => {
 							<li>
 								<NavLink to="/donate">Donate</NavLink>
 							</li>
+							<Divider orientation="vertical" />
 							<li>
 								<NavLink to="/news">News</NavLink>
 							</li>

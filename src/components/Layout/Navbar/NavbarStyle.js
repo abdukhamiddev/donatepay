@@ -7,13 +7,23 @@ const Navbar = styled.div`
 	align-items: center;
 	z-index: 999;
 	align-items: center;
-	padding: 1rem 0;
+	overflow: hidden;
+	@media (max-width: 800px) {
+		height: 150px;
+	}
+	margin-bottom: 2rem;
 
 	.navbar {
 		&__inner {
 			display: flex;
 			height: 100%;
 			justify-content: space-between;
+			padding: 1rem 0;
+			align-items: center;
+			justify-content: space-between;
+			@media (max-width: 800px) {
+				flex-direction: column;
+			}
 		}
 
 		&__logo {
@@ -23,13 +33,11 @@ const Navbar = styled.div`
 			a {
 				padding: 1rem;
 				padding-inline-start: 0;
+				font-weight: 700;
+				font-family: "Montserrat";
 			}
 		}
 		&__menu {
-			@media (max-width: 800px) {
-				display: none;
-			}
-
 			ul {
 				display: flex;
 				list-style: none;
@@ -43,6 +51,7 @@ const Navbar = styled.div`
 						transition: all 0.6s ease;
 						font-family: "Montserrat";
 						text-decoration: none;
+						font-size: 16px;
 						position: relative;
 						color: ${({ theme }) => theme.palette.grey[700]};
 						&::before {

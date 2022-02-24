@@ -6,6 +6,25 @@ let theme = createTheme({
 			main: "#00ce4b",
 		},
 	},
+	components: {
+		MuiButton: {
+			styleOverrides: {
+				endIcon: {
+					paddingInlineEnd: "1rem",
+				},
+				startIcon: {
+					paddingInlineStart: "1rem",
+				},
+			},
+		},
+		MuiCircularProgress: {
+			styleOverrides: {
+				circle: {
+					color: "black",
+				},
+			},
+		},
+	},
 	typography: {
 		fontSize: 16,
 		fontFamily: [
