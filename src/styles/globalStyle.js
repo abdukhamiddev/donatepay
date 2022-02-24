@@ -23,6 +23,10 @@ margin: 0;
     background-color: white;
     overflow-y: scroll !important;
 }
+a{
+    text-decoration: none;
+    color:inherit;
+}
 html{
     overflow-y:hidden;
 }
@@ -34,6 +38,31 @@ html,body, .app{
     min-height: 100vh;
     height: 100%;
     overflow-y:hidden;
+}
+.c-image{
+    width: 100%;
+    display: flex;
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    svg{
+        width: 100%;
+        height: auto;
+        max-height: 50vh;
+    }
+  
+}
+.page{
+    min-height: calc(100vh-240px);
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: ${({ theme }) => `${theme.spacing(10)}px`};
+    padding-bottom: ${({ theme }) => `${theme.spacing(15)}px`};
+    z-index: 100;
+
 }
 
 

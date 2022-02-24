@@ -16,33 +16,31 @@ function App() {
 	useEffect(() => {
 		WebFont.load({
 			google: {
-				families: ["Open Sans", "Montserrat"],
+				families: ["Open Sans", "Montserrat:400,700,900"],
 			},
 		});
 	}, []);
 	return (
-		<Router>
-			<StylesProvider injectFirst>
-				<ThemeProvider theme={muiTheme}>
-					<SCProvider theme={muiTheme}>
-						<CssBaseline />
-						<GlobalStyle />
-						<div className="app">
-							<Navbar />
-							<main>
-								<AnimatePresence>
-									<Routes>
-										<Route path="/" element={<Home />} />
-									</Routes>
-								</AnimatePresence>
-							</main>
+		<StylesProvider injectFirst>
+			<ThemeProvider theme={muiTheme}>
+				<SCProvider theme={muiTheme}>
+					<CssBaseline />
+					<GlobalStyle />
+					<div className="app">
+						<Navbar />
+						<main>
+							<AnimatePresence>
+								<Routes>
+									<Route path="/" element={<Home />} />
+								</Routes>
+							</AnimatePresence>
+						</main>
 
-							<Footer />
-						</div>
-					</SCProvider>
-				</ThemeProvider>
-			</StylesProvider>
-		</Router>
+						<Footer />
+					</div>
+				</SCProvider>
+			</ThemeProvider>
+		</StylesProvider>
 	);
 }
 
