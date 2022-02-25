@@ -23,7 +23,7 @@ const Footer = styled.footer`
 				color: ${({ theme }) => theme.palette.primary.main};
 				font-family: "Montserrat";
 				font-size: 2rem;
-				font-size: 700;
+				font-weight: 700;
 				margin-inline-end: ${({ theme }) => `${theme.spacing(2)}px`};
 				margin-right: 0.6rem;
 			}

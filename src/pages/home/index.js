@@ -20,7 +20,7 @@ const Home = () => {
 	};
 	const handleOpen = () => {
 		setOpen(true);
-		setVideoPlaying(false);
+		setVideoPlaying(true);
 	};
 
 	return (
@@ -75,6 +75,7 @@ const Home = () => {
 				>
 					<div className="video-wrapper">
 						<ReactPlayer
+							playing={isVideoPlaying}
 							url="https://www.youtube.com/watch?v=E1xkXZs0cAQ"
 							width="100%"
 							height="100%"

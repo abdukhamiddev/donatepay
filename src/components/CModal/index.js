@@ -5,6 +5,8 @@ const CModal = styled(Modal)`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border: none;
+	outline: none;
 	div {
 		outline: none;
 		padding: 0;
