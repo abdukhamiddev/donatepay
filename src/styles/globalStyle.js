@@ -53,6 +53,22 @@ html,body, .app{
     }
   
 }
+.highlight {
+    position: relative;
+    display: inline-block;
+    /* color: red; */
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      background: ${({ theme }) => theme.palette.primary.main};
+      width: 100%;
+      height: 13px;
+      z-index: -1;
+    }
+  }
+
 .page{
     min-height: calc(100vh-240px);
     width: 100%;

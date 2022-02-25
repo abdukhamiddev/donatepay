@@ -7,9 +7,22 @@ import ButtonIcon from "../../components/ButtonIcon";
 import CmButton from "../../components/CmButton";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
-import CModal from "../../components/Modal";
+import CModal from "../../components/CModal";
+import { useState } from "react";
 
 const Home = () => {
+	const [isVideoPlaying, setVideoPlaying] = useState(false);
+	const [open, setOpen] = useState(false);
+
+	const handleClose = () => {
+		setOpen(false);
+		setVideoPlaying(true);
+	};
+	const handleOpen = () => {
+		setOpen(true);
+		setVideoPlaying(false);
+	};
+
 	return (
 		<Styled.Home
 			className="page"
@@ -45,7 +58,7 @@ const Home = () => {
 									Donate now
 								</CmButton>
 							</Link>
-							<ButtonIcon variant="contained">
+							<ButtonIcon variant="contained" onClick={handleOpen}>
 								<PlayButtonIcon />
 							</ButtonIcon>
 						</div>
@@ -57,6 +70,8 @@ const Home = () => {
 				<CModal
 					aria-labelledby="simple-modal-title"
 					aria-describedby="simple-modal-description"
+					open={open}
+					onClose={handleClose}
 				>
 					<div className="video-wrapper">
 						<ReactPlayer

@@ -13,6 +13,16 @@ const Home = styled(motion.div)`
 			margin-bottom: 2rem;
 			font-weight: 600;
 		}
+		&__buttons {
+			button:first-of-type {
+				margin-inline-end: "5px";
+			}
+		}
+		&__caption {
+			font-size: 12px;
+			font-weight: 600;
+			color: ${({ theme }) => theme.palette.grey[700]};
+		}
 	}
 `;
 export const Styled = {
