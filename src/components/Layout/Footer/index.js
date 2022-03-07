@@ -16,7 +16,7 @@ const Footer = () => {
 
 					<div className="footer__sponsors">
 						<Typography variant="body2">Not Sponsored by</Typography>
-						<img src={Unicef} alt="Uniced Photo" style={{ width: 120 }} />
+						<img src={Unicef} alt="Unicef" style={{ width: 120 }} />
 					</div>
 					<div className="footer__privacy">
 						<ul>

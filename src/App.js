@@ -7,7 +7,7 @@ import { ThemeProvider as SCProvider } from "styled-components";
 import GlobalStyle from "./styles/globalStyle";
 import Navbar from "./components/Layout/Navbar";
 import Footer from "./components/Layout/Footer";
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route,} from "react-router-dom";
 import Home from "./pages/home";
 import { useEffect } from "react";
 import WebFont from "webfontloader";
