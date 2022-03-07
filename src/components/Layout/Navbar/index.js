@@ -26,7 +26,7 @@ const Navbar = () => {
 							</li>
 							<Divider orientation="vertical" />
 							<li>
-								<NavLink to="/news">News</NavLink>
+								<NavLink to="/success-stories">Success</NavLink>
 							</li>
 						</ul>
 					</div>

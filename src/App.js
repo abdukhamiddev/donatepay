@@ -12,6 +12,7 @@ import Home from "./pages/home";
 import { useEffect } from "react";
 import WebFont from "webfontloader";
 import DonatePage from "./pages/donate";
+import SuccessPage from "./pages/success-stories";
 
 function App() {
 	useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
 								<Routes>
 									<Route path="/" element={<Home />} />
 									<Route path="/donate" element={<DonatePage />} />
+									<Route path="/success-stories" element={<SuccessPage />} />
 								</Routes>
 							</AnimatePresence>
 						</main>
