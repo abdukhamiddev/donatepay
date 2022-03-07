@@ -35,13 +35,16 @@ const DonatePage = () => {
 						dispatch={donationDispatch}
 					/>
 				) : step === 2 ? (
-					<StepTwo />
+					<StepTwo
+						nextStep={nextStep}
+						data={donationState}
+						dispatch={donationDispatch}
+					/>
 				) : step === 3 ? (
 					<StepThree />
 				) : (
 					<StepOne />
 				)}
-				hi
 			</Container>
 		</Styled.Donate>
 	);
